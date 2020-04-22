@@ -1,19 +1,24 @@
-import React, { Component, useState } from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  const [text, setText] = useState('');
-  return (
-    <View style={{padding: 10}}>
-     <TextInput
-        style = {{height: 100}}
-        placeholder = "Type here to translate!"
-        onChangeText = {text => setText(text)}
-        defaultValue = {text}
-    />
-    <Text style ={{padding: 10, fontSize: 42}}>
-      {text.split(' ').map((word) => word && 'type').join(' ')}
-      </Text>
-    </View>
-  );
+import SignupForm from './app/components/SignupForm';
+
+export default class App extends React.Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <SignupForm />
+            </View>
+        );
+    }
 }
+
+const styles = StyleSheet.create({
+  container: {
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#DBD6D6',
+        paddingLeft: 60,
+        paddingRight: 60,
+  },
+});
