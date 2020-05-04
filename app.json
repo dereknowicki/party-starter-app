@@ -1,9 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "party-starter-app",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
+    "name": "part",
+    "slug": "part",
     "platforms": [
       "ios",
       "android",
