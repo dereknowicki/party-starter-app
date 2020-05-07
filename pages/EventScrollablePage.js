@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, Image, View, FlatList } from 'react-native';
-import SearchHeader from './components/SearchHeader.js';
-import ListItem from './components/ListItem.js';
-import MenuBar from './components/MenuBar.js';
+import SearchHeader from '../components/SearchHeader.js';
+import ListItem from '../components/ListItem.js';
+import MenuBar from '../components/MenuBar.js';
 
 const App = ()  => {
   //Dummy data for testing purposes, will pull from backend
