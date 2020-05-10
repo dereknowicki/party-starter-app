@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, Image, View, FlatList } from 'react-native';
-import SearchHeader from '../components/SearchHeader.js';
-import ListItem from '../components/ListItem.js';
+import SearchHeader from 'SearchHeader.js';
+import ListItem from 'ListItem.js';
 import MenuBar from '../components/MenuBar.js';
 
 const App = ()  => {
